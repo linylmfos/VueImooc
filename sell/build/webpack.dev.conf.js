@@ -1,8 +1,12 @@
 var config = require('../config')
 var webpack = require('webpack')
+// 合并配制文件
 var merge = require('webpack-merge')
+// 工具方法
 var utils = require('./utils')
+// 开发时和运行时的webpack文件共享的配制文件
 var baseWebpackConfig = require('./webpack.base.conf')
+// 操作HTML文件插件
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // add hot-reload related code to entry chunks
